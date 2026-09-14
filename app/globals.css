@@ -34,4 +34,24 @@ body {
   .chip {
     @apply inline-flex items-center gap-2 rounded-full border border-neutral-200 bg-neutral-50 px-3 py-1 text-sm text-neutral-700 dark:border-neutral-700 dark:bg-neutral-800 dark:text-neutral-200;
   }
+
+  /* Workout module: a calm, sunrise-toned dark shell (5AM Club morning tone) */
+  .workout-shell {
+    @apply min-h-screen bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 text-slate-100;
+  }
+  .workout-card {
+    @apply rounded-2xl border border-slate-800 bg-slate-900/70 backdrop-blur shadow-sm;
+  }
+  .workout-btn-primary {
+    @apply btn bg-amber-500 text-slate-950 hover:bg-amber-400 active:bg-amber-600 font-semibold;
+  }
+  .workout-btn-outline {
+    @apply btn border border-slate-700 text-slate-100 hover:bg-slate-800;
+  }
+  .workout-chip {
+    @apply inline-flex items-center gap-1.5 rounded-full border border-slate-700 bg-slate-800/70 px-3 py-1 text-xs font-medium text-slate-200;
+  }
+  .workout-stat-tile {
+    @apply workout-card flex flex-col gap-1 p-4;
+  }
 }

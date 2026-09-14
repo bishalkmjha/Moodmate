@@ -1051,6 +1051,9 @@ function Header() {
         </div>
         <div className="flex items-center gap-2">
           <ThemeBadge />
+          <a href="/workout" className="btn-outline px-3 py-1.5 text-sm">
+            Workout
+          </a>
           <button className="btn-outline px-3 py-1.5 text-sm">Sign In</button>
         </div>
       </div>

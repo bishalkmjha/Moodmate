@@ -14,7 +14,7 @@
     "react": "^18",
     "react-dom": "^18",
     "next": "14.2.23",
-    "@supabase/ssr": "^0.6.1",
+    "@supabase/ssr": "^0.12.7",
     "@supabase/supabase-js": "^2.49.4"
   },
   "devDependencies": {
