@@ -16,6 +16,7 @@ export default function RootLayout() {
             <Stack.Screen name="login" />
             <Stack.Screen name="onboarding" />
             <Stack.Screen name="train" options={{ presentation: "modal" }} />
+            <Stack.Screen name="reels-upload" options={{ presentation: "modal" }} />
           </Stack>
         </AuthProvider>
       </SafeAreaProvider>

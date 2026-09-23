@@ -339,6 +339,48 @@ export type Database = {
         }
         Relationships: []
       }
+      reels: {
+        Row: {
+          id: string
+          user_id: string
+          video_path: string
+          caption: string | null
+          created_at: string
+        }
+        Insert: {
+          id?: string
+          user_id: string
+          video_path: string
+          caption?: string | null
+          created_at?: string
+        }
+        Update: {
+          id?: string
+          user_id?: string
+          video_path?: string
+          caption?: string | null
+          created_at?: string
+        }
+        Relationships: []
+      }
+      reel_likes: {
+        Row: {
+          reel_id: string
+          user_id: string
+          created_at: string
+        }
+        Insert: {
+          reel_id: string
+          user_id: string
+          created_at?: string
+        }
+        Update: {
+          reel_id?: string
+          user_id?: string
+          created_at?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
