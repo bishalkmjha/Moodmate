@@ -1,18 +1,18 @@
 {
   "expo": {
-    "name": "Full Body",
-    "slug": "full-body-workout",
-    "scheme": "fullbodyworkout",
+    "name": "OneAtom",
+    "slug": "oneatom",
+    "scheme": "oneatom",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "dark",
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.moodmate.fullbody"
+      "bundleIdentifier": "com.moodmate.oneatom"
     },
     "android": {
-      "package": "com.moodmate.fullbody",
+      "package": "com.moodmate.oneatom",
       "adaptiveIcon": {
         "backgroundColor": "#020617",
         "foregroundImage": "./assets/android-icon-foreground.png",
@@ -32,7 +32,7 @@
       [
         "expo-image-picker",
         {
-          "photosPermission": "Full Body needs access to your videos to post a reel.",
+          "photosPermission": "OneAtom needs access to your videos to post a reel.",
           "cameraPermission": false,
           "microphonePermission": false
         }

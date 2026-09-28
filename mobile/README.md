@@ -1,4 +1,4 @@
-# Full Body — mobile app
+# OneAtom — mobile app
 
 A native Android/iOS app (Expo + React Native) for the same adaptive full-body
 workout product as the web app in the repo root: onboarding that captures body
@@ -85,7 +85,7 @@ app under your name/company, so it can't be created on your behalf:
 
 - Replace the placeholder icons/splash in `assets/` (currently Expo defaults)
   with real branding.
-- Double check `app.json`'s `android.package` (`com.moodmate.fullbody`) is
+- Double check `app.json`'s `android.package` (`com.moodmate.oneatom`) is
   the identifier you want — it **cannot be changed** after your first Play
   Store upload.
 - Apply the Supabase migrations in `../supabase/migrations` to your project's
