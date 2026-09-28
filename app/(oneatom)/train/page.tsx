@@ -15,14 +15,14 @@ export default async function TrainPage() {
     .maybeSingle();
 
   if (!profile) {
-    redirect("/workout/onboarding");
+    redirect("/onboarding");
   }
 
   const currentTier = await resolveCurrentTier(supabase, user.id, profile.fitness_tier);
   const session = await getOrCreateTodaySession(supabase, user.id, profile, currentTier);
 
   if (!session) {
-    redirect("/workout");
+    redirect("/");
   }
 
   let { data: logs } = await supabase

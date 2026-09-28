@@ -28,7 +28,7 @@ export default function LoginPage() {
         return;
       }
       setInfo("Account created. Redirecting you to set up your profile...");
-      router.push("/workout/onboarding");
+      router.push("/onboarding");
       router.refresh();
       return;
     }
@@ -39,7 +39,7 @@ export default function LoginPage() {
       setError(signInError.message);
       return;
     }
-    router.push("/workout");
+    router.push("/");
     router.refresh();
   }
 

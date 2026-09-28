@@ -48,7 +48,7 @@ export function ProfileForm({
   userId,
   initialProfile,
   submitLabel = "Build my adaptive plan",
-  redirectTo = "/workout",
+  redirectTo = "/",
 }: {
   userId: string;
   initialProfile?: InitialProfileValues | null;

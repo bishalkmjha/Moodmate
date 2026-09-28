@@ -4,12 +4,12 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const LINKS = [
-  { href: "/workout", label: "Today" },
-  { href: "/workout/reels", label: "Reels" },
-  { href: "/workout/library", label: "Library" },
-  { href: "/workout/habits", label: "Habits" },
-  { href: "/workout/progress", label: "Progress" },
-  { href: "/workout/profile", label: "Profile" },
+  { href: "/", label: "Today" },
+  { href: "/reels", label: "Reels" },
+  { href: "/library", label: "Library" },
+  { href: "/habits", label: "Habits" },
+  { href: "/progress", label: "Progress" },
+  { href: "/profile", label: "Profile" },
 ];
 
 export function WorkoutNav() {

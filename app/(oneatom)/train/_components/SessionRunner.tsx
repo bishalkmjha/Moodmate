@@ -91,7 +91,7 @@ export function SessionRunner({
         <p className="mt-1 text-sm text-slate-400">
           Logged for today. Consistency beats intensity — see you tomorrow.
         </p>
-        <button className="workout-btn-primary mt-4 px-5 py-2" onClick={() => router.push("/workout")}>
+        <button className="workout-btn-primary mt-4 px-5 py-2" onClick={() => router.push("/")}>
           Back to dashboard
         </button>
       </div>
