@@ -4,18 +4,13 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-patchedDependencies:
-  supabase@2.34.3:
-    hash: c048a963c8546c63e7e2cab2086b09121ca0149b0c92f9ee2a3a3e399ff75439
-    path: .easycode-ai/supabase/v2.34.3/supabase@2.34.3.patch
-
 importers:
 
   .:
     dependencies:
       '@supabase/ssr':
-        specifier: ^0.6.1
-        version: 0.6.1(@supabase/supabase-js@2.57.4)
+        specifier: ^0.12.7
+        version: 0.12.7(@supabase/supabase-js@2.57.4)
       '@supabase/supabase-js':
         specifier: ^2.49.4
         version: 2.57.4
@@ -46,7 +41,7 @@ importers:
         version: 8.5.6
       supabase:
         specifier: 2.34.3
-        version: 2.34.3(patch_hash=c048a963c8546c63e7e2cab2086b09121ca0149b0c92f9ee2a3a3e399ff75439)
+        version: 2.34.3
       tailwindcss:
         specifier: ^3.4.1
         version: 3.4.17
@@ -210,10 +205,10 @@ packages:
   '@supabase/realtime-js@2.15.5':
     resolution: {integrity: sha512-/Rs5Vqu9jejRD8ZeuaWXebdkH+J7V6VySbCZ/zQM93Ta5y3mAmocjioa/nzlB6qvFmyylUgKVS1KpE212t30OA==}
 
-  '@supabase/ssr@0.6.1':
-    resolution: {integrity: sha512-QtQgEMvaDzr77Mk3vZ3jWg2/y+D8tExYF7vcJT+wQ8ysuvOeGGjYbZlvj5bHYsj/SpC0bihcisnwPrM4Gp5G4g==}
+  '@supabase/ssr@0.12.7':
+    resolution: {integrity: sha512-wiBtEie1KkRJi9RrZWY3R2imRhX1JY7qMyUCH2z9AUk15gQebNEplM+urbCKamdxaTJLXUU6LlpkJsaxhojCEg==}
     peerDependencies:
-      '@supabase/supabase-js': ^2.43.4
+      '@supabase/supabase-js': ^2.114.0
 
   '@supabase/storage-js@2.12.1':
     resolution: {integrity: sha512-QWg3HV6Db2J81VQx0PqLq0JDBn4Q8B1FYn1kYcbla8+d5WDmTdwwMr+EJAxNOSs9W4mhKMv+EYCpCrTFlTj4VQ==}
@@ -966,7 +961,7 @@ snapshots:
       - bufferutil
       - utf-8-validate
 
-  '@supabase/ssr@0.6.1(@supabase/supabase-js@2.57.4)':
+  '@supabase/ssr@0.12.7(@supabase/supabase-js@2.57.4)':
     dependencies:
       '@supabase/supabase-js': 2.57.4
       cookie: 1.0.2
@@ -1455,7 +1450,7 @@ snapshots:
       pirates: 4.0.7
       ts-interface-checker: 0.1.13
 
-  supabase@2.34.3(patch_hash=c048a963c8546c63e7e2cab2086b09121ca0149b0c92f9ee2a3a3e399ff75439):
+  supabase@2.34.3:
     dependencies:
       bin-links: 5.0.0
       https-proxy-agent: 7.0.6
