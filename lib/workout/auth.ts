@@ -8,7 +8,7 @@ export async function requireWorkoutUser() {
   } = await supabase.auth.getUser();
 
   if (!user) {
-    redirect("/workout/login");
+    redirect("/login");
   }
 
   return { supabase, user };

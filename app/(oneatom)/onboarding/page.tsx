@@ -12,7 +12,7 @@ export default async function OnboardingPage() {
           Two minutes of setup, then an adaptive full-body routine that fits your body today.
         </p>
       </div>
-      <ProfileForm userId={user.id} submitLabel="Build my adaptive plan" redirectTo="/workout" />
+      <ProfileForm userId={user.id} submitLabel="Build my adaptive plan" redirectTo="/" />
     </div>
   );
 }

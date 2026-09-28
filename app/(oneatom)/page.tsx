@@ -19,7 +19,7 @@ export default async function WorkoutDashboardPage() {
     .maybeSingle();
 
   if (!profile) {
-    redirect("/workout/onboarding");
+    redirect("/onboarding");
   }
 
   const today = todayISODate();
@@ -69,13 +69,13 @@ export default async function WorkoutDashboardPage() {
         </div>
         <div className="mt-5 flex flex-wrap gap-3">
           <Link
-            href="/workout/train"
+            href="/train"
             className="workout-btn-primary px-5 py-2.5"
             aria-disabled={session?.status === "completed"}
           >
             {session?.status === "completed" ? "Review session" : "Start training"}
           </Link>
-          <Link href="/workout/library" className="workout-btn-outline px-5 py-2.5">
+          <Link href="/library" className="workout-btn-outline px-5 py-2.5">
             Browse library
           </Link>
         </div>

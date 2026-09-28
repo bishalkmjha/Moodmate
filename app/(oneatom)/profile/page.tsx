@@ -12,7 +12,7 @@ export default async function ProfilePage() {
     .maybeSingle();
 
   if (!profile) {
-    redirect("/workout/onboarding");
+    redirect("/onboarding");
   }
 
   return (
@@ -25,7 +25,7 @@ export default async function ProfilePage() {
         userId={user.id}
         initialProfile={profile}
         submitLabel="Save changes"
-        redirectTo="/workout/profile"
+        redirectTo="/profile"
       />
     </div>
   );
