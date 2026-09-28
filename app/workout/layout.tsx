@@ -5,7 +5,7 @@ import { WorkoutNav } from "./_components/WorkoutNav";
 import { SignOutButton } from "./_components/SignOutButton";
 
 export const metadata = {
-  title: "Full Body — Moodmate",
+  title: "OneAtom — Moodmate",
   description: "Adaptive full-body training with Atomic Habits and 5AM Club routines.",
 };
 
@@ -24,7 +24,7 @@ export default async function WorkoutLayout({ children }: { children: ReactNode 
               className="h-8 w-8 rounded-lg bg-gradient-to-br from-amber-400 to-orange-600"
               aria-hidden
             />
-            <span className="text-base font-semibold">Full Body</span>
+            <span className="text-base font-semibold">OneAtom</span>
           </Link>
           <div className="flex items-center gap-2 text-sm">
             <Link href="/" className="workout-chip hover:bg-slate-700">

@@ -32,7 +32,7 @@ export default async function ReelsPage() {
       videoUrl: publicUrl.publicUrl,
       caption: reel.caption,
       createdAt: reel.created_at,
-      authorTag: reel.user_id === user.id ? "You" : identityByUser.get(reel.user_id) ?? "Full Body member",
+      authorTag: reel.user_id === user.id ? "You" : identityByUser.get(reel.user_id) ?? "OneAtom member",
       likeCount: reelLikes.length,
       likedByMe: reelLikes.some((l) => l.user_id === user.id),
     };

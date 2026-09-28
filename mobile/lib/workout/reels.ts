@@ -40,7 +40,7 @@ export async function fetchReels(currentUserId: string): Promise<ReelWithMeta[]>
       caption: reel.caption,
       createdAt: reel.created_at,
       authorTag:
-        reel.user_id === currentUserId ? "You" : identityByUser.get(reel.user_id) ?? "Full Body member",
+        reel.user_id === currentUserId ? "You" : identityByUser.get(reel.user_id) ?? "OneAtom member",
       likeCount: reelLikes.length,
       likedByMe: reelLikes.some((l) => l.user_id === currentUserId),
     };
